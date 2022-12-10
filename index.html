@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toxic Code Editor Online - Web Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section Starts From Here  -->
+    <header>
+      <div class="menu" id="menu" onclick="toggleMenu()" title="Menu">
+        <box-icon name="menu" color="#fff"></box-icon>
+      </div>
+      <div
+        class="menu-close"
+        id="menu-close"
+        onclick="offMenu()"
+        title="Close Menu"
+      >
+        <box-icon name="window-close" color="#fff"></box-icon>
+      </div>
+      <a href="editor.html">
+      <div class="logo">
+        <box-icon name="code-alt" color="#ffffff"></box-icon>&nbsp; Toxic Code
+        Editor.
+      </div>
+    </a>
+      <div class="menu">
+        <box-icon name="github" type="logo" color="#fff"></box-icon>
+      </div>
+      <div class="menu-items" id="menu-items">
+        <a href="index.html"
+          ><box-icon class="NewIcon" name="home-alt-2" type="solid"></box-icon>&nbsp;Home</a
+        >
+        <a href="editor.html"
+          ><box-icon class="NewIcon" type="solid" name="file-plus"></box-icon>&nbsp;New File</a
+        >
+        <a href="https://www.instagram.com/arsh_code"
+          ><box-icon class="NewIcon" type="solid" name="building-house"></box-icon
+          >&nbsp;Support</a
+        >
+      </div>
+    </header>
+    <!-- Header Section Ends From Here -->
+
+    
+
+    <!-- Home Section Starts From Here -->
+    <section id="home">
+      <div class="left">
+        <h1>Toxic Code Editor</h1>
+        <p>
+          A powerfull & Fast Online Free Code Editor For Developers To Save
+          Time<strong>(No Hidden Charges, Free For Lifetime)</strong>
+        </p>
+        <a href="editor.html"
+          ><button>
+            <box-icon name="code-alt" color="#0029ff"></box-icon>&nbsp;New File
+          </button></a
+        >
+      </div>
+      <div class="right">
+        <img src="./Assets/heroimg.png" alt="Hello" />
+      </div>
+    </section>
+    <!-- Home Section Ends From Here -->
+
+
+    <!-- Credits -->
+    <div class="credits">
+      <h1>Developer:</h1>
+      <p><strong>Arshahdul Ahmed</strong> | Freelance Web Developer</p>
+      <button onclick="ShowPopup()">
+        <box-icon name="donate-heart" type="solid" color="#0038fb"></box-icon
+        >&nbsp;Support
+      </button>
+    </div>
+
+    <!-- QR Code For Donation -->
+    <div class="overlay-popup" id="Popup">    
+    <div class="popup">
+      <h1>Scan The QR Code</h1>
+      <p>Donate Through UPI To Support My Work</p>
+      <div class="qr">
+      </div>
+      <div class="butts">
+        <div class="leftbutts">
+          <form>
+            <input class="amount" type="number" name="amount" placeholder="Enter Amount" required>
+            <button type="submit">Conform</button>
+          </form>
+        </div>
+        <div class="rightbutts">
+          <button onclick="HidePopup()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Footer Section Starts From Here  -->
+    <footer>
+      <p>
+        <strong>© Toxic Code Editor 2022 | All Rights Reserved </strong><br />
+        All Designs & Code are patent By Toxic Code Editor
+      </p>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+    <!-- Box-Icon Script  -->
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  </body>
+</html>

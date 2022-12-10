@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toxic Code Editor Online - New File</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <!-- Header Section Starts From Here  -->
+    <header>
+      <div class="menu" id="menu" onclick="toggleMenu()" title="Menu">
+        <box-icon name="menu" color="#fff"></box-icon>
+      </div>
+      <div
+        class="menu-close"
+        id="menu-close"
+        onclick="offMenu()"
+        title="Close Menu"
+      >
+        <box-icon name="window-close" color="#fff"></box-icon>
+      </div>
+      <div class="logo">
+        <box-icon name="code-alt" color="#ffffff"></box-icon>&nbsp; Toxic Code
+        Editor.
+      </div>
+      <div class="menu">
+        <box-icon name='github' type='logo' color='#fff' ></box-icon>
+      </div>
+      <div class="menu-items" id="menu-items">
+        <a href="index.html"
+          ><box-icon name='home-alt-2' type='solid' ></box-icon>&nbsp;Home</a
+        >
+        <a href="editor.html"
+          ><box-icon type='solid' name='file-plus'></box-icon>&nbsp;New File</a
+        >
+        <a href="#Support"><box-icon type='solid' name='building-house'></box-icon>&nbsp;Support</a>
+      </div>
+    </header>
+    <!-- Header Section Ends From Here -->
+
+    <!-- Editor Section Starts From Here  -->
+    <section id="editor">
+      <div class="main-editor-block">
+        <div class="left-edit">
+          <label>Html</label>
+          <textarea oninput="ShowPreview()" placeholder="Your Html Codes..." id="html" cols="30" rows="10"></textarea>
+          <label>CSS</label>
+          <textarea oninput="ShowPreview()" placeholder="Your CSS Codes..." id="css" cols="30" rows="10"></textarea>
+          <label>JavaScript</label>
+          <textarea oninput="ShowPreview()" placeholder="Your Logic With JavaScript Codes..." id="js" cols="30" rows="10"></textarea>
+        </div>
+        <div class="right-result" id="preview">
+          <iframe id="preview-window"></iframe>
+        </div>
+      </div>
+    </section>
+        <!-- Editor Section Ends From Here  -->
+
+        <!-- Footer Section Starts From Here  -->
+    <footer>
+      <p><strong>© Toxic Code Editor 2022 | All Rights Reserved </strong><br> All Designs & Code are patent By Toxic Code Editor</p>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+    <!-- Box-Icon Script  -->
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  </body>
+</html>
